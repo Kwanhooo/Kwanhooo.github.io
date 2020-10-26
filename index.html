@@ -1,4 +1,6 @@
-<!--在我的电脑上以1920×1080分辨率，125%系统缩放运行时，没有排版的显示问题-->
+<!--本页面的最终版本在我的电脑上以1920×1080分辨率，125%系统缩放运行时，没有排版问题-->
+<!--系统显示设置不变的情况下，系统字体设置为苹方后.middle.center的右侧预留需改为440px，同时视频要改为680×340-->
+<!--465px改为了440px,视频的660×330改为了680×340-->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -18,26 +20,26 @@
         width:auto;
         margin:0 auto;
     }
-    .head{
+    .top{
         height:360px;
-        background-image: url(2.JPEG) ;
+        background-image: url(2.jpeg) ;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         opacity: 0.8;
         text-align: center;
         line-height: 100px;
-        font-size: 55px;
+        font-size: 60px;
         font-family: 造字工房情书体（非商用）;
         font-weight: bolder;
     }
-    .main{
-        height:800px;
+    .middle{
+        height:820px;
         position:relative;
     }
  
-    .main .left{
+    .middle .left{
         width:400px;
-        height:800px;
+        height:820px;
         position:absolute;
         left:0;
         top:0;
@@ -45,21 +47,21 @@
         font-size: xx-small;
         opacity: 1;
     }
-    .main .center{
-        height:800px;
-        margin: 0 465px 0 400px;
+    .middle .center{
+        height:820px;
+        margin: 0 440px 0 400px;
         background-image: url(center.jfif);
     }
-    .main .right{
+    .middle .right{
         width:auto;
-        height:800px;
+        height:820px;
         position:absolute;
         right:0;
         top:0;
         background-image: url(7.jpg);
         opacity: 1;
     }
-    .foot{
+    .bottom{
         height:40px;
         background-color:#3ea1cf56;
         text-align: center;
@@ -74,12 +76,12 @@
     </style>
 <body>        
         <div class="box">
-            <div class="head">
+            <div class="top">
                 <audio src="music_lethergo.mp3" controls="controls" title="这首歌来自我最喜欢的乐队Passenger-Let Her Go"></audio><br>
-                于无情处知有情
+                于 无 情 处 知 有 情
                 <div style="text-align: center;font-size: 30px;font-weight: bold;font-family: 造字工房情书体（非商用）">学习,分享,HTML</div>
             </div>
-            <div class="main">
+            <div class="middle">
                 <div class="left">
                     <div>
                         <img src="1.jpg" height="288px" width="400px"  title="这幅画来自Claude Monet，由于我不愿意露脸，由这幅我最喜欢的画来代替吧"alt="这其实是克莱德莫奈画作的电子本，如果这张图片不见了，我也没办法了！">
@@ -94,7 +96,7 @@
                 </div>
                 <div class="center">
                     <div style="text-align: center">
-                    <video src="test_video_x264.mp4" controls="controls" height="330px" width="660px" title="入画 @影视飓风(只是视频好看而已，与我无瓜)"></video>
+                    <video src="test_video.mp4" controls="controls" height="340px" width="680px" title="入画 @影视飓风(只是视频好看而已，与我无瓜)"></video>
                     </div>
                         <b>
                             <div style="text-align: center;font-size: 20px">这是一个来自&nbsp;<a href="https://space.bilibili.com/946974?from=search&seid=5114915629162651772">@影视飓风</a>&nbsp;的视频——入画
@@ -129,7 +131,7 @@
                     <a href="jump_test.html">You can click here to test if you can jump to another page</a>
                 </div>        
             </div>
-            <div class="foot">
+            <div class="bottom">
                 Copyright&nbsp;&copy;2020&nbsp;Gwanhou&nbsp;&nbsp;All rights reserved. 
                 <select>
                     <option>针不戳</option>
